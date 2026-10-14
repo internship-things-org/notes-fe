@@ -1,5 +1,8 @@
 services:
   frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: ghcr.io/daulyoi/frontend:latest
     ports:
       - "8080:80"
