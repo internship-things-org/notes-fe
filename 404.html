@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 — Not Found</title>
+    <style>
+      :root {
+        --bg: #f6f4ef;
+        --ink: #1a1a1a;
+        --muted: #5c5c5c;
+        --line: #d4cfc4;
+        --accent: #2c5f8a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.25rem;
+        font-family: Georgia, "Times New Roman", serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.45;
+      }
+      main {
+        max-width: 32rem;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid var(--line);
+        border-bottom</title>: 1px solid var(--line);
+        padding: 2rem 1rem;
+      }
+      .code {
+        font-family: ui-monospace, monospace;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: var(--accent);
+      }
+      h1 {
+        margin: 0.5rem 0 0.75rem;
+        font-size: 1.3rem;
+      }
+      p {
+        margin: 0 0 1rem;
+        color: var(--muted);
+      }
+      .path {
+        font-family: ui-monospace, monospace;
+        font-size: 0.8rem;
+        word-break: break-all;
+      }
+      a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        border: 1px solid var(--ink);
+        background: var(--ink);
+        color: #fff;
+        padding: 0.45rem 0.9rem;
+        font: inherit;
+      }
+      a:hover {
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="code">404</div>
+      <h1>Page not found</h1>
+      <p>The page you asked for doesn't exist on this server.</p>
+      <p class="path" id="path"></p>
+      <a href="/">← Back to Notes</a>
+    </main>
+    <script>
+      document.getElementById('path').textContent = window.location.pathname;
+    </script>
+  </body>
+</html>
+</h1>
